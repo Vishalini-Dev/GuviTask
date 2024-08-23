@@ -1,12 +1,14 @@
 //Question3
 
 package guvi.task2;
+// create class 
 public class Account {
     static double Balance ;
     static long accountNo;
     public Account(){
         this.Balance=0.0 ;
     }
+    // Constructor
     public Account(long accountNo, double Balance ){
         this.accountNo=accountNo;
         this.Balance=Balance;
@@ -14,6 +16,7 @@ public class Account {
         System.out.println("Balance:"+Balance);
 
     }
+    // create deposit method
     public void deposit(double amount){
         if(amount>0){
             System.out.println("Deposited Amount:"+ amount);
@@ -23,6 +26,7 @@ public class Account {
             System.out.println("Invalid amount");
         }
     }
+    //create withdraw method
     public void withdraw(double amount){
         if(amount>0&&amount<=Balance){
             System.out.println("Withdraw Amount:"+ amount);
@@ -33,6 +37,7 @@ public class Account {
         }
 
     }
+    // create display method
     public void display(){
         System.out.println("Current Balance:"+Balance);
     }
