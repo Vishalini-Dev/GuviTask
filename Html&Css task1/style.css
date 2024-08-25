@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+}
+nav{
+    padding: 20px;
+    margin-left: 150px;
+}
+nav a{
+    text-decoration: none;
+    color:white ;
+    padding: 20px;
+}
+#cen1{
+    margin-left: 620px;
+    margin-top: 150px;
+    color: white;
+}
+#cen2{
+    text-align: center;
+    color: white;
+}
+#about{
+    display: flex;
+    padding-left: 250px;
+    padding-top: 50px;
+}
+.con1{
+    height: 350px ;
+    width: 400px;
+    margin: 50px;
+}
+.con3 img{
+    height: 500px;
+    width: 400px;
+    margin-left: 50px;
+}
+button{
+    display: inline;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bt1{
+    color: rgb(53, 52, 52);
+    background-color:rgb(172, 166, 166);
+    border: none;
+    height: 40px;
+    width: auto;
+}
+#bt2{
+    color: white;
+    background-color: rgb(237, 48, 48);
+    height: 40px;
+    width: 130px;
+    border: none;
+}
+#bt3{
+    color: white;
+    background-color: rgb(251, 161, 72);
+    height: 40px;
+    width: 130px;
+    border: none;
+}
+.button{
+    margin: 50px;
+    text-align: center;
+}
+button:hover{
+    letter-spacing: 2px;
+    transition: 0.05s;
+    border-radius: 20px;
+}
+.quotes{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    color:white;
+}
+.quotes p{
+    font-size: larger;
+    padding-left: 430px;
+    padding-top: 40px;
+}
+#awards h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+#awards h2::before,
+#awards h2::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #c6c6c6;
+    margin: 0 10px;
+}
+#awards h2 span {
+    padding: 0 10px;
+    background-color: #ffffff; 
+}
+.awards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.award-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.2 );
+    text-align: center;
+}
+.award-item h3 {
+    margin: 10px 0;
+    color: #555;
+}
+.align{
+    margin-left: 180px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+.books{
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+}
+.invention{
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+}
+.books h2,.invention h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-family:monospace;
+    font-size:22px;
+}
+.books h2::before,
+.books h2::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #c6c6c6;
+    margin: 0 10px;
+}
+.invention h2::before,
+.invention h2::after{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #c6c6c6;
+    margin: 0 10px;
+}
+.awards h2 span ,.invention h2 span{
+    padding: 0 10px;
+    background-color: #ffffff; 
+}
+.list1,.list2{
+    margin-top: 40px;
+    margin-left: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.conclusion{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+}
+#sec1{
+    height: 100px;
+    width: 430px;
+    padding-top: 20px;
+    padding-left: 300px;
+    border-right: 2px rgb(130, 129, 129) solid;
+}
+#sec2{
+    height: 100px;
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-right: 2px rgb(107, 107, 107) solid;
+}
+#sec3{
+    height: 150px;
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#sec3 a{
+    text-decoration: none;
+    color: rgb(5, 131, 180);
+}
+.conclusion p{
+    margin-top: 20px;
+}
