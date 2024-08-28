@@ -52,12 +52,14 @@ public class Student {
         }
     }
 }
-//create class 
+//create exception class for age
 class AgeNotWithinRangeException extends Exception{
     public AgeNotWithinRangeException(String message){
         super(message);
     }
 }
+
+//create exception class for name
 class NameNotValidException extends Exception{
     public NameNotValidException(String message){
         super(message);
