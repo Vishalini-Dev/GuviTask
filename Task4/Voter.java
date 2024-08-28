@@ -5,12 +5,12 @@ public class Voter{
     static int voterId;
     static String name;
     static int age;
-
+    // craete constructor and thorws exeception
     public Voter(int voterId,String name,int age)throws CheckedException{
         this.voterId=voterId;
         this.name=name;
         this.age=age;
-
+        // condition is true then create exception
         if(age<18){
             throw new CheckedException("Invalid age for Voter");
         }
