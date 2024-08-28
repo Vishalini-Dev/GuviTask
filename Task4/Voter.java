@@ -35,17 +35,13 @@ public class Voter{
 
     }
 }
+//create exception class 
 class CheckedException extends Exception{
     public CheckedException(String message){
         super(message);
     }
+}
 
-}
-class NameNotValidException extends Exception{
-    public NameNotValidException(String message){
-        super(message);
-    }
-}
 
 
 
