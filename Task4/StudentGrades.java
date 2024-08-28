@@ -64,7 +64,3 @@ public class StudentGrades {
     }
 }
 
-        studentGrades.display();
-    }
-}
-
