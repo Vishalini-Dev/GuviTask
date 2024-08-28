@@ -8,22 +8,23 @@ public class Student {
     static String name;
     static int age;
     static String course;
-
+    
     boolean isValidName(String name){
+        //pattern of name 
         boolean matches = Pattern.matches("[aA-zZ]+", name);
         return matches;
     }
-
+   // create constructor throws exception
     public Student(int rollNo, String name, int age, String course)throws AgeNotWithinRangeException,NameNotValidException{
         this.rollNo=rollNo;
         this.name=name;
         this.age=age;
         this.course=course;
-
+        //check age is true then create exception
         if(age<15 || age>21){
             throw new AgeNotWithinRangeException("Age is not within a range");
         }
-
+        // check name is not valid then create exception
         if(!isValidName(name)){
             throw new NameNotValidException("Name have numbers or special symbols");
         }
@@ -51,9 +52,14 @@ public class Student {
         }
     }
 }
-
+//create class 
 class AgeNotWithinRangeException extends Exception{
     public AgeNotWithinRangeException(String message){
+        super(message);
+    }
+}
+class NameNotValidException extends Exception{
+    public NameNotValidException(String message){
         super(message);
     }
 }
