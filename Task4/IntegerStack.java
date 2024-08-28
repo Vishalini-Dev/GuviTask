@@ -5,17 +5,20 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class IntegerStack {
+    //create stack
     private Stack<Integer> stack;
-
+    //constructor
     public IntegerStack() {
         stack = new Stack<>();
     }
-
+    
     public void push(int element) {
+        //add element on stack 
         stack.push(element);
     }
-
+    
     public int pop() {
+        //check stack is not empty
         if (!stack.isEmpty()) {
             return stack.pop();
         } else {
@@ -28,6 +31,7 @@ public class IntegerStack {
     }
 
     public static void main(String[] args) {
+        //object creation
         IntegerStack integerStack = new IntegerStack();
         Scanner scan=new Scanner(System.in);
 
@@ -40,6 +44,7 @@ public class IntegerStack {
             }
             else{
                 try {
+                    //add element on stack using push method
                     int element=Integer.parseInt(input);
                     integerStack.push(element);
                     System.out.println("Pushed element:"+element);
@@ -54,6 +59,7 @@ public class IntegerStack {
             System.out.println("Do you want to pop the element? (yes/no)");
             String input=scan.nextLine();
             if(input.equalsIgnoreCase("yes")){
+                //remove the element on stack using pop method
                 System.out.println("Popped element: " + integerStack.pop());
             } else if (input.equalsIgnoreCase("no")) {
                 break;
@@ -66,15 +72,17 @@ public class IntegerStack {
     }
 
     public static class StudentGrades {
+        //create hash map
         private HashMap<String,Integer> grades;
-
+        //create constructor
         public StudentGrades(){
             this.grades=new HashMap<>();
         }
-
+        // add elements on hash map
         public void addStudent(String name,int grade){
             grades.put(name,grade);
         }
+        // 
         public void removeStudent(String name) {
             grades.remove(name);
         }
